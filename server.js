@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({
 app.use("/", htmlRouter);
 app.use("/", articleRouter);
 
-var URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/news-scraper'; 
+var URI = process.env.MONGODB_URI || 'mongodb://smswanlund:ewolf116@ds253388.mlab.com:53388/heroku_3dv38w9r'; 
 mongoose.connect(URI);
 var db = mongoose.connection;
 
